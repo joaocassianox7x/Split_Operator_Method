@@ -23,7 +23,7 @@ Well, for this code we use a lot of packages:
     \item Lapacke and Cblas: algebra libraries for armadillo back-end;
 \end{itemize}
 
-\section{Packages-Python3}
+#Packages-Python3
 Well, we plot al data in Python3 with the fallowing packages:
 
 \begin{itemize}
@@ -39,7 +39,7 @@ The code have three important pre-processing constants: BASE is about the points
 
 All functions are using reference passing, not a object passing (for speed reasons) also in this field of thinking, in the code I've avoid to use if's statements like:
 
-![Comaparision](pictures_to_readme/comp.png)
+![Comaparision](comp.png)
 
 # Algorithm
 
@@ -82,9 +82,9 @@ We can easily solve that with Fourier and Inverse Fourier trasform (below $U_r =
 \end{equation}
 
 # How to Use?
-Well, first run the command './pre\_requisites' to install all pre-requisites and create all necessary folders.\newline
+Well, first run the command './pre\_requisites' to install all pre-requisites and create all necessary folders.
 
-To run the '.cpp' file you can execute 'make && ./BINARY'  or just run 'g++ schr\_main.cpp -larmadillo -fopenmp -lm -lfftw3 -llapacke -Ofast -lblas -o BINARY && ./BINARY'.\newline
+To run the '.cpp' file you can execute 'make && ./BINARY'  or just run 'g++ schr\_main.cpp -larmadillo -fopenmp -lm -lfftw3 -llapacke -Ofast -lblas -o BINARY && ./BINARY'.
 
-For the python3 program you just need to write 'python3 plotar.py'.\newline
+For the python3 program you just need to write 'python3 plotar.py'.
 
