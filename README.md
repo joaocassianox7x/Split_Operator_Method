@@ -12,7 +12,7 @@ The README summary will be shown as seen below:
 Well, for this code we use a lot of packages:
 <p align="center"><img src="/tex/1b8b2b657d49ced08c0a7bce7c52ba24.svg?invert_in_darkmode&sanitize=true" align=middle width=676.89547695pt height=185.57078264999998pt/></p>
 
-\section{Packages-Python3}
+#Packages-Python3
 Well, we plot al data in Python3 with the fallowing packages:
 
 <p align="center"><img src="/tex/d76a6f8a0d485bf7a425c157414b20ff.svg?invert_in_darkmode&sanitize=true" align=middle width=675.616821pt height=165.84475544999998pt/></p>
@@ -22,7 +22,7 @@ The code have three important pre-processing constants: BASE is about the points
 
 All functions are using reference passing, not a object passing (for speed reasons) also in this field of thinking, in the code I've avoid to use if's statements like:
 
-![Comaparision](pictures_to_readme/comp.png)
+![Comaparision](comp.png)
 
 # Algorithm
 
@@ -47,9 +47,9 @@ We can easily solve that with Fourier and Inverse Fourier trasform (below <img s
 <p align="center"><img src="/tex/04ca66e1234a7b36fcbfbd723d837c3d.svg?invert_in_darkmode&sanitize=true" align=middle width=555.07112265pt height=39.452455349999994pt/></p>
 
 # How to Use?
-Well, first run the command './pre\_requisites' to install all pre-requisites and create all necessary folders.\newline
+Well, first run the command './pre\_requisites' to install all pre-requisites and create all necessary folders.
 
-To run the '.cpp' file you can execute 'make && ./BINARY'  or just run 'g++ schr\_main.cpp -larmadillo -fopenmp -lm -lfftw3 -llapacke -Ofast -lblas -o BINARY && ./BINARY'.\newline
+To run the '.cpp' file you can execute 'make && ./BINARY'  or just run 'g++ schr\_main.cpp -larmadillo -fopenmp -lm -lfftw3 -llapacke -Ofast -lblas -o BINARY && ./BINARY'.
 
-For the python3 program you just need to write 'python3 plotar.py'.\newline
+For the python3 program you just need to write 'python3 plotar.py'.
 
