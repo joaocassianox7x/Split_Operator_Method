@@ -37,7 +37,7 @@ Well, we plot all data in Python3 with the fallowing packages:
 # Basic Constants and Considerations 
 The code have three important pre-processing constants: BASE is about the points for discretization as we want go to reciprocal space the FFT is really much faster when the number of points is a power of two; hbar is the usual hbar in quantum mechanics; mass is the mass of the gaussian package.
 
-All functions are using reference passing, not a object passing (for speed reasons) also in this field of thinking, in the code I've avoid to use if's statements like:
+All functions are using reference passing, not a object passing (for speed reasons) also with the "as fast as possible" philosophy I've avoid to use if's statements like:
 
 ![Comaparision](comp.png)
 
@@ -49,7 +49,7 @@ Let's think in a PDE like:
     i\hbar \frac{\partial \psi(\textbf{r},t)}{dt} = \left(-\frac{\hbar^2}{2m} \nabla^2 + V(\textbf{r}) \right)\psi(\textbf{r},t)
 \end{equation}
 
-We can write this Hamiltonian in two parts, a real-space part and a reciprocal parte ('r" and 'k" respectively) like '$H = H_k + H_r$" where '$H_k = -\frac{\hbar^2}{2m} \nabla^2$" and '$H_r = V(\textbf{r}) $". So, taking a initial condition for '$t=0$" (In my code a gaussian package):
+We can write this Hamiltonian in two parts, a real-space part and a reciprocal part ('r" and 'k" respectively) like '$H = H_k + H_r$" where '$H_k = -\frac{\hbar^2}{2m} \nabla^2$" and '$H_r = V(\textbf{r}) $". So, taking a initial condition for '$t=0$" (In my code a gaussian package):
 
 \begin{equation}
     \psi(\textbf{r},t+dt) = e^{-\frac{iHdt}{\hbar}}\psi(\textbf{r},t) = e^{-\frac{i(H_k+H_r)dt}{\hbar}}\psi(\textbf{r},t) 
