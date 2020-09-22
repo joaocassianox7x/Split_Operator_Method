@@ -1,1 +1,0 @@
-# Split_Operator_Method
