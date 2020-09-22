@@ -6,12 +6,9 @@ This code solve the time dependency of a Gaussian package with ´Schrödinger  E
 
 The README summary will be shown as seen below:
 
-<p align="center"><img src="/tex/858bc25c4d7e7fa5c3a23e49ee5f37b1.svg?invert_in_darkmode&sanitize=true" align=middle width=105.34267425pt height=71.96348445pt/></p>
-    
-    \item Basic Constants and Important Considerations
-    
-    \item Analysis of Algorithm and Method
-    
+<p align="center"><img src="/tex/bce7bc46b837d3594695e10ff10d8626.svg?invert_in_darkmode&sanitize=true" align=middle width=105.34267425pt height=75.25115564999999pt/></p>
+    \item Basic Constants and Important Considerations;
+    \item Analysis of Algorithm and Method;
     \item How to use all possible files (.sh, .cpp and .py)
 \end{itemize}
 
