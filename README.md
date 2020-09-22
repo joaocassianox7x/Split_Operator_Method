@@ -20,7 +20,7 @@ Well, we plot all data in Python3 with the fallowing packages:
 # Basic Constants and Considerations 
 The code have three important pre-processing constants: BASE is about the points for discretization as we want go to reciprocal space the FFT is really much faster when the number of points is a power of two; hbar is the usual hbar in quantum mechanics; mass is the mass of the gaussian package.
 
-All functions are using reference passing, not a object passing (for speed reasons) also in this field of thinking, in the code I've avoid to use if's statements like:
+All functions are using reference passing, not a object passing (for speed reasons) also with the "as fast as possible" philosophy I've avoid to use if's statements like:
 
 ![Comaparision](comp.png)
 
@@ -30,7 +30,7 @@ Let's think in a PDE like:
 
 <p align="center"><img src="/tex/87a5a7ba313bd16eac2ab6afd6174237.svg?invert_in_darkmode&sanitize=true" align=middle width=490.9215762pt height=40.11819404999999pt/></p>
 
-We can write this Hamiltonian in two parts, a real-space part and a reciprocal parte ('r" and 'k" respectively) like '<img src="/tex/0a2aa24f45ff52f5fef3e9a7d9bc1b20.svg?invert_in_darkmode&sanitize=true" align=middle width=98.88298694999997pt height=22.465723500000017pt/>" where '<img src="/tex/83a21f7a8c4d5ab4a44f6653c07462b5.svg?invert_in_darkmode&sanitize=true" align=middle width=98.86921274999999pt height=33.45973289999998pt/>" and '<img src="/tex/1a4b9cc06116da2789e3d8044d57acde.svg?invert_in_darkmode&sanitize=true" align=middle width=76.6741866pt height=24.65753399999998pt/>". So, taking a initial condition for '<img src="/tex/1c899e1c767eb4eac89facb5d1f2cb0d.svg?invert_in_darkmode&sanitize=true" align=middle width=36.07293689999999pt height=21.18721440000001pt/>" (In my code a gaussian package):
+We can write this Hamiltonian in two parts, a real-space part and a reciprocal part ('r" and 'k" respectively) like '<img src="/tex/0a2aa24f45ff52f5fef3e9a7d9bc1b20.svg?invert_in_darkmode&sanitize=true" align=middle width=98.88298694999997pt height=22.465723500000017pt/>" where '<img src="/tex/83a21f7a8c4d5ab4a44f6653c07462b5.svg?invert_in_darkmode&sanitize=true" align=middle width=98.86921274999999pt height=33.45973289999998pt/>" and '<img src="/tex/1a4b9cc06116da2789e3d8044d57acde.svg?invert_in_darkmode&sanitize=true" align=middle width=76.6741866pt height=24.65753399999998pt/>". So, taking a initial condition for '<img src="/tex/1c899e1c767eb4eac89facb5d1f2cb0d.svg?invert_in_darkmode&sanitize=true" align=middle width=36.07293689999999pt height=21.18721440000001pt/>" (In my code a gaussian package):
 
 <p align="center"><img src="/tex/584b83fbd098870e9536942b39dfe321.svg?invert_in_darkmode&sanitize=true" align=middle width=524.38206975pt height=23.6529876pt/></p>
 
