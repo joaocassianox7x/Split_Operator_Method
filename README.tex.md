@@ -23,7 +23,7 @@ Well, for this code we use a lot of packages:
     \item Lapacke and Cblas: algebra libraries for armadillo back-end;
 \end{itemize}
 
-#Packages-Python3
+# Packages-Python3
 Well, we plot al data in Python3 with the fallowing packages:
 
 \begin{itemize}
