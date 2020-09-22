@@ -8,15 +8,13 @@ The README summary will be shown as seen below:
 
 \begin{itemize}
     \item Packages
+    
     \begin{itemize}
         \item Python 
         \item C++
     \end{itemize}
-    
-    \item Basic Constants and Important Considerations
-    
-    \item Analysis of Algorithm and Method
-    
+    \item Basic Constants and Important Considerations;
+    \item Analysis of Algorithm and Method;
     \item How to use all possible files (.sh, .cpp and .py)
 \end{itemize}
 
