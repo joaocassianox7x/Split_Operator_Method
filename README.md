@@ -13,12 +13,12 @@ Well, for this code we use a lot of packages:
 <p align="center"><img src="/tex/1b8b2b657d49ced08c0a7bce7c52ba24.svg?invert_in_darkmode&sanitize=true" align=middle width=676.89547695pt height=185.57078264999998pt/></p>
 
 # Packages-Python3
-Well, we plot al data in Python3 with the fallowing packages:
+Well, we plot all data in Python3 with the fallowing packages:
 
 <p align="center"><img src="/tex/d76a6f8a0d485bf7a425c157414b20ff.svg?invert_in_darkmode&sanitize=true" align=middle width=675.616821pt height=165.84475544999998pt/></p>
 
 # Basic Constants and Considerations 
-The code have three important pre-processing constants: BASE is about the points for discretization as we want go to reciprocal space the FFT is really much faster when the number of points is a power of two; is the usual hbar in quantum mechanics; mass is the mass of the gaussian package.
+The code have three important pre-processing constants: BASE is about the points for discretization as we want go to reciprocal space the FFT is really much faster when the number of points is a power of two; hbar is the usual hbar in quantum mechanics; mass is the mass of the gaussian package.
 
 All functions are using reference passing, not a object passing (for speed reasons) also in this field of thinking, in the code I've avoid to use if's statements like:
 
