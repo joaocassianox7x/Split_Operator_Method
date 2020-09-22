@@ -2,7 +2,7 @@
 
 # Summary
 
-This code solve the time dependency of a Gaussian package with ´Schrödinger  Equation". For numerical results i've use the Split-Operator Method in 2 dimensions.
+This code solve the time dependency of a Gaussian package with "Schrödinger  Equation". For numerical results i've use the Split-Operator Method in 2 dimensions.
 
 The README summary will be shown as seen below:
 
@@ -49,24 +49,24 @@ Let's think in a PDE like:
     i\hbar \frac{\partial \psi(\textbf{r},t)}{dt} = \left(-\frac{\hbar^2}{2m} \nabla^2 + V(\textbf{r}) \right)\psi(\textbf{r},t)
 \end{equation}
 
-We can write this Hamiltonian in two parts, a real-space part and a reciprocal part ('r" and 'k" respectively) like '$H = H_k + H_r$" where '$H_k = -\frac{\hbar^2}{2m} \nabla^2$" and '$H_r = V(\textbf{r}) $". So, taking a initial condition for '$t=0$" (In my code a gaussian package):
+We can write this Hamiltonian in two parts, a real-space part and a reciprocal part ('r" and 'k" respectively) like "$H = H_k + H_r$" where "$H_k = -\frac{\hbar^2}{2m} \nabla^2$" and '$H_r = V(\textbf{r}) $". So, taking a initial condition for "$t=0$" (In my code a gaussian package):
 
 \begin{equation}
     \psi(\textbf{r},t+dt) = e^{-\frac{iHdt}{\hbar}}\psi(\textbf{r},t) = e^{-\frac{i(H_k+H_r)dt}{\hbar}}\psi(\textbf{r},t) 
 \end{equation}
 
-Taking '$dt \approx 0$' and using the Baker-Campbell-Housdorff formula:
+Taking "$dt \approx 0$" and using the Baker-Campbell-Housdorff formula:
 \begin{equation}
     \psi(\textbf{r},t+dt) = \left( e^{\frac{-iH_rdt}{\hbar}}e^{\frac{-iH_kdt}{\hbar}}e^{\frac{-[iH_r,H_K]dt^2}{2}} \right) \psi(\textbf{r},t)
 \end{equation}
 
-The above formula have an error of '$dt^2$' order, in order to make that smaller we cand split the space step into two half-steps, what leave us to a '$dt^3$" error:
+The above formula have an error of "$dt^2$" order, in order to make that smaller we cand split the space step into two half-steps, what leave us to a "$dt^3$" error:
 
 \begin{equation}
     \psi(\textbf{r},t+dt) = \left( e^{\frac{-iH_rdt}{\hbar}}e^{\frac{-iH_kdt}{2\hbar}}e^{\frac{-iH_rdt}{2 \hbar}} \right) \psi(\textbf{r},t) +\mathcal{O}(dt^3)
 \end{equation}
 
-Is \textbf{important} make that obvious, here '$e^{H}$' where 'H' is a matrix we are not expanding in terms of taylor series, but applying exponential of each element of the matrix.
+Is \textbf{important} make that obvious, here "$e^{H}$" where 'H' is a matrix we are not expanding in terms of taylor series, but applying exponential of each element of the matrix.
 
 We can easily solve that with Fourier and Inverse Fourier trasform (below $U_r = e^{-\frac{iH_rdt}{\hbar}}$ and $U_k = e^{-\frac{iH_kdt}{\hbar}}$ ):
 \begin{equation}
@@ -82,9 +82,9 @@ We can easily solve that with Fourier and Inverse Fourier trasform (below $U_r =
 \end{equation}
 
 # How to Use?
-Well, first run the command './pre\_requisites' to install all pre-requisites and create all necessary folders.
+Well, first run the command "./pre\_requisites" to install all pre-requisites and create all necessary folders.
 
-To run the '.cpp' file you can execute 'make && ./BINARY'  or just run 'g++ schr\_main.cpp -larmadillo -fopenmp -lm -lfftw3 -llapacke -Ofast -lblas -o BINARY && ./BINARY'.
+To run the '.cpp' file you can execute "make && ./BINARY" (to compile and execute)  or just run 'g++ schr\_main.cpp -larmadillo -fopenmp -lm -lfftw3 -llapacke -Ofast -lblas -o BINARY && ./BINARY' (again to compile and execute).
 
 For the python3 program you just need to write 'python3 plotar.py'.
 
