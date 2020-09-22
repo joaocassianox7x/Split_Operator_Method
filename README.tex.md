@@ -39,9 +39,9 @@ The code have three important pre-processing constants: BASE is about the points
 
 All functions are using reference passing, not a object passing (for speed reasons) also in this field of thinking, in the code I've avoid to use if's statements like:
 
-FIGURA
+![Comaparision](pictures_to_readme/comp.png)
 
-\section{Algorithm}
+# Algorithm
 
 Let's think in a PDE like:
 
