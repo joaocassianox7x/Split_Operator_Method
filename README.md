@@ -6,20 +6,16 @@ This code solve the time dependency of a Gaussian package with ´Schrödinger  E
 
 The README summary will be shown as seen below:
 
-<p align="center"><img src="/tex/bce7bc46b837d3594695e10ff10d8626.svg?invert_in_darkmode&sanitize=true" align=middle width=105.34267425pt height=75.25115564999999pt/></p>
-    \item Basic Constants and Important Considerations;
-    \item Analysis of Algorithm and Method;
-    \item How to use all possible files (.sh, .cpp and .py)
-\end{itemize}
+<p align="center"><img src="/tex/ca7bbcfc06e90bbbb2599b398b8b2075.svg?invert_in_darkmode&sanitize=true" align=middle width=359.22475545pt height=115.06849364999998pt/></p>
 
 # Packages-C++
 Well, for this code we use a lot of packages:
-<p align="center"><img src="/tex/e4a7e5401d3b9237f16d98c68ee1cd87.svg?invert_in_darkmode&sanitize=true" align=middle width=676.89547695pt height=185.57078264999998pt/></p>
+<p align="center"><img src="/tex/1b8b2b657d49ced08c0a7bce7c52ba24.svg?invert_in_darkmode&sanitize=true" align=middle width=676.89547695pt height=185.57078264999998pt/></p>
 
 \section{Packages-Python3}
 Well, we plot al data in Python3 with the fallowing packages:
 
-<p align="center"><img src="/tex/c098d82c0f56272c012430f5460c0354.svg?invert_in_darkmode&sanitize=true" align=middle width=675.616821pt height=165.84475544999998pt/></p>
+<p align="center"><img src="/tex/d76a6f8a0d485bf7a425c157414b20ff.svg?invert_in_darkmode&sanitize=true" align=middle width=675.616821pt height=165.84475544999998pt/></p>
 
 # Basic Constants and Considerations 
 The code have three important pre-processing constants: BASE is about the points for discretization as we want go to reciprocal space the FFT is really much faster when the number of points is a power of two; is the usual hbar in quantum mechanics; mass is the mass of the gaussian package.
@@ -50,7 +46,7 @@ Is \textbf{important} make that obvious, here `<img src="/tex/b82909b02a40877fd7
 We can easily solve that with Fourier and Inverse Fourier trasform (below <img src="/tex/5815709515a245ef0734c68053c5128b.svg?invert_in_darkmode&sanitize=true" align=middle width=91.17132089999998pt height=34.063933200000015pt/> and <img src="/tex/ac2cd6f31708991900e2154f7b667b66.svg?invert_in_darkmode&sanitize=true" align=middle width=92.54120204999998pt height=36.52973610000002pt/> ):
 <p align="center"><img src="/tex/04ca66e1234a7b36fcbfbd723d837c3d.svg?invert_in_darkmode&sanitize=true" align=middle width=555.07112265pt height=39.452455349999994pt/></p>
 
-# ection{How to Use?}
+# How to Use?
 Well, first run the command `./pre\_requisites' to install all pre-requisites and create all necessary folders.\newline
 
 To run the ´.cpp' file you can execute ´make && ./BINARY'  or just run `g++ schr\_main.cpp -larmadillo -fopenmp -lm -lfftw3 -llapacke -Ofast -lblas -o BINARY && ./BINARY'.\newline
