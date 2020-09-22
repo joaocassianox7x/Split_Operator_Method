@@ -24,7 +24,7 @@ Well, for this code we use a lot of packages:
 \end{itemize}
 
 # Packages-Python3
-Well, we plot al data in Python3 with the fallowing packages:
+Well, we plot all data in Python3 with the fallowing packages:
 
 \begin{itemize}
     \item Seaborn: used for the heatmap plot;
@@ -35,7 +35,7 @@ Well, we plot al data in Python3 with the fallowing packages:
 \end{itemize}
 
 # Basic Constants and Considerations 
-The code have three important pre-processing constants: BASE is about the points for discretization as we want go to reciprocal space the FFT is really much faster when the number of points is a power of two; is the usual hbar in quantum mechanics; mass is the mass of the gaussian package.
+The code have three important pre-processing constants: BASE is about the points for discretization as we want go to reciprocal space the FFT is really much faster when the number of points is a power of two; hbar is the usual hbar in quantum mechanics; mass is the mass of the gaussian package.
 
 All functions are using reference passing, not a object passing (for speed reasons) also in this field of thinking, in the code I've avoid to use if's statements like:
 
