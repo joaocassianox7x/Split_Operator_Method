@@ -7,12 +7,7 @@ This code solve the time dependency of a Gaussian package with ´Schrödinger  E
 The README summary will be shown as seen below:
 
 \begin{itemize}
-    \item Packages
-    
-    \begin{itemize}
-        \item Python 
-        \item C++
-    \end{itemize}
+    \item Packages (Python3 and C++)
     \item Basic Constants and Important Considerations;
     \item Analysis of Algorithm and Method;
     \item How to use all possible files (.sh, .cpp and .py)
@@ -22,13 +17,9 @@ The README summary will be shown as seen below:
 Well, for this code we use a lot of packages:
 \begin{itemize}
     \item Armadillo: is the mainly library in my code, the front-end package for the hole algebra of the system (front-end for lapacke,cblas, fftw3 and openMP);
-    
     \item OpenMP: parallel library for all for's statements in the code, it improve the time execution a lot;
-    
     \item Chrono: time meansurement of execution;
-    
     \item FFTW3: fast fourier transform, it's not used explicitly, but armadillo use in the back-end;
-    
     \item Lapacke and Cblas: algebra libraries for armadillo back-end;
 \end{itemize}
 
@@ -36,7 +27,6 @@ Well, for this code we use a lot of packages:
 Well, we plot al data in Python3 with the fallowing packages:
 
 \begin{itemize}
-
     \item Seaborn: used for the heatmap plot;
     \item Matplotlib: used in back-end in Seaborn and necessary to save images;
     \item Numpy:  to load the data in Python3;
@@ -91,7 +81,7 @@ We can easily solve that with Fourier and Inverse Fourier trasform (below $U_r =
     \right\}
 \end{equation}
 
-# ection{How to Use?}
+# How to Use?
 Well, first run the command `./pre\_requisites' to install all pre-requisites and create all necessary folders.\newline
 
 To run the ´.cpp' file you can execute ´make && ./BINARY'  or just run `g++ schr\_main.cpp -larmadillo -fopenmp -lm -lfftw3 -llapacke -Ofast -lblas -o BINARY && ./BINARY'.\newline
