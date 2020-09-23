@@ -17,10 +17,10 @@ The README summary will be shown as seen below:
 Well, for this code we've used a lot of packages:
 \begin{itemize}
     \item Armadillo: it is the main library in my code. It is the front-end package for the whole algebra of the system (front-end for lapacke,cblas, fftw3, and openMP);
-    \item OpenMP: it is the parallel library for all "for's" statements in the code, it improves the time execution a lot;
+    \item OpenMP: it is the parallel library for all "for's" statements in the code. It improves the time execution a lot;
     \item Chrono: it is used for the time measurement of execution;
     \item FFTW3: it is the Fast Fourier Transform library. It's not used explicitly, but armadillo uses it in the back-end;
-    \item Lapacke and Cblas: algebra libraries for armadillo back-end;
+    \item Lapacke and Cblas: they are algebra libraries for armadillo back-end;
 \end{itemize}
 
 # Packages-Python3
@@ -30,15 +30,13 @@ Well, we plot all data in Python3 by the use of the following packages:
     \item Seaborn: it is used for the heatmap plot;
     \item Matplotlib: it is used as a back-end library for Seaborn. Also, it's necessary to save images;
     \item Numpy:  it is used to load all the data in Python3;
-    \item Joblib: it is used to run the image generation in parallel (important because it is the biggest time-consuming part of the code);
+    \item Joblib: it is used to run the image generation in parallel which is important because it is the biggest time-consuming part of the code;
     \item FFMPEG: it is not a Python3 library, but, inside the Python3 code, we call a command to generate the video from plots;
 \end{itemize}
 
 # Basic Constants and Considerations 
 The code has three important pre-processing constants: 
-BASE é necessário para a discretização o espaço. Portanto, como queremos usar o "divide and conquest",  o numero de pontos precisa ser uma potência de 2;
-
-BASE is used for the space discretization. Therefore, the number of points must be the power of two, once we want to use the "divide and conquest" algorithm; hbar is the usual hbar ($\frac{h}{2\pi}$) in quantum mechanics; mass is the mass of the gaussian package.
+BASE is used for the space discretization. Therefore, the number of points must be the power of two($N = 2^{n}$), once we want to use the "divide and conquest" algorithm; hbar is the usual hbar $\left(\frac{h}{2\pi}\right)$ in quantum mechanics; mass is the mass of the gaussian package.
 
 All functions are using a reference passing in order to improve code performance. Also, with the "as fast as possible" philosophy, I have to avoid the use of "if's", like:
 
