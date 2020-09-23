@@ -93,9 +93,9 @@ For the python3 program, you just need to write and run 'python3 plotar.py'.
 
 Some results for you have an idea about how plots are make:
 
-A wall potential:
 ![Comaparision](figures/Pacote_500s_0.4.gif)
 ![Comaparision](figures/3dbarrier.gif)
+![Comaparision](figures/giant_potential.gif)
 
 Almost infinite one:
 
