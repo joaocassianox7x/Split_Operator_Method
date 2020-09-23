@@ -10,18 +10,16 @@ The README summary will be shown as seen below:
 
 # Packages-C++
 Well, for this code we've used a lot of packages:
-<p align="center"><img src="/tex/a9281cb8b1c013333bed11ed5a87ec5a.svg?invert_in_darkmode&sanitize=true" align=middle width=675.61699095pt height=205.29680985pt/></p>
+<p align="center"><img src="/tex/26ba1b35fdd4f0f6fec154645331119c.svg?invert_in_darkmode&sanitize=true" align=middle width=675.61699095pt height=205.29680985pt/></p>
 
 # Packages-Python3
 Well, we plot all data in Python3 by the use of the following packages:
 
-<p align="center"><img src="/tex/cce028844496b9598726a973460a9fd2.svg?invert_in_darkmode&sanitize=true" align=middle width=675.61703715pt height=185.57078264999998pt/></p>
+<p align="center"><img src="/tex/5285939929b9f406f3e79a4fed1ea353.svg?invert_in_darkmode&sanitize=true" align=middle width=675.61703715pt height=185.57078264999998pt/></p>
 
 # Basic Constants and Considerations 
 The code has three important pre-processing constants: 
-BASE é necessário para a discretização o espaço. Portanto, como queremos usar o "divide and conquest",  o numero de pontos precisa ser uma potência de 2;
-
-BASE is used for the space discretization. Therefore, the number of points must be the power of two, once we want to use the "divide and conquest" algorithm; hbar is the usual hbar (<img src="/tex/2b1e637a2292f6629cd46f7f33672596.svg?invert_in_darkmode&sanitize=true" align=middle width=14.652506549999996pt height=28.92634470000001pt/>) in quantum mechanics; mass is the mass of the gaussian package.
+BASE is used for the space discretization. Therefore, the number of points must be the power of two(<img src="/tex/ca5b0a2028e3571d911e4fd5ea301a66.svg?invert_in_darkmode&sanitize=true" align=middle width=53.262831599999984pt height=22.465723500000017pt/>), once we want to use the "divide and conquest" algorithm; hbar is the usual hbar <img src="/tex/7fb5a0da6f3b27af9ce94b52af075052.svg?invert_in_darkmode&sanitize=true" align=middle width=33.66627329999999pt height=28.92634470000001pt/> in quantum mechanics; mass is the mass of the gaussian package.
 
 All functions are using a reference passing in order to improve code performance. Also, with the "as fast as possible" philosophy, I have to avoid the use of "if's", like:
 
