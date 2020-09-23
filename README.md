@@ -55,4 +55,13 @@ To run the '.cpp' file, you can execute "make && ./BINARY" (to compile and execu
 For the python3 program, you just need to write and run 'python3 plotar.py'.
 
 # Results:
+
+Some results for you have an idea about how plots are make:
+
+A wall potential:
 ![Comaparision](figures/Pacote_500s_0.4.gif)
+![Comaparision](figures/3dbarrier.gif)
+
+Almost infinite one:
+
+
