@@ -53,3 +53,6 @@ Well, first we must run the command "./pre\_requisites" to install all pre-requi
 To run the '.cpp' file, you can execute "make && ./BINARY" (to compile and execute)  or just run the fallowing comand 'g++ schr\_main.cpp -larmadillo -fopenmp -lm -lfftw3 -llapacke -Ofast -lblas -o BINARY && ./BINARY' (again to compile and execute).
 
 For the python3 program, you just need to write and run 'python3 plotar.py'.
+
+# Results:
+![Comaparision](figures/Pacote_500s_0.4.gif)
